@@ -1,0 +1,36 @@
+---
+title: "Peformance Test of Ngram Get Distribution Function"
+author: "Raj Prasad"
+date: "December 27, 2016"
+output: html_document
+---
+
+This procedure will...
+
+- load a 10% sample of the blog, news and twitter text provided for the capstone class
+- run a microbenchmark test (100 trials) of the getDistro function
+- print the results
+- plot a boxplot and logplot of the results
+
+```{r include=FALSE}
+source("ngramBootstrap.R")
+library(microbenchmark)
+op <- microbenchmark(
+        getDistro = getDistro("this is a test", "a_test", triGram, biGram, uniGrams, POSDictionary, triplets),
+        times=100L)
+```
+
+Here's the performance data:
+```{r echo=FALSE}
+print(op)
+```
+
+Here's a boxplot:
+```{r}
+boxplot(op)
+```
+
+Here's a logplot:
+```{r}
+qplot(y=time, data=op, colour=expr) + scale_y_log10()
+```
