@@ -784,7 +784,7 @@ hljs.initHighlightingOnLoad();
   <div class="slides">
 
 <section data-state="section" data-transition="linear" data-transition-speed="default">
-<h1>Data Science Capstone</h1><p>Raj Prasad<br/>December, 2016</p>
+<h1>Data Science Capstone</h1><p>Raj Prasad<br/>December 2016</p>
 
 <div class="slideContent" >
 
@@ -809,7 +809,7 @@ hljs.initHighlightingOnLoad();
 <ul>
 <li>Typing is slow on small touch screens</li>
 <li>Typing is error prone on such devices</li>
-<li>Wouldn&#39;t it be great if the device could predict the word you needed and pop it in with a single click?</li>
+<li>Wouldn&#39;t it be great if the device could predict the word you need and pop it in with a single click?</li>
 </ul>
 
 </div>
@@ -831,7 +831,7 @@ hljs.initHighlightingOnLoad();
 <ul>
 <li>The <a href="https://daddyprasad5.shinyapps.io/capstoneshiny/">example app</a> is available on  shiny.io.</li>
 <li>After you type a few words, guesses for your next word will appear below the text box and button.</li>
-<li>Press Enter or Click the button to add the Best Guess to what you&#39;re typing.</li>
+<li>Press Enter or click the button to add the Best Guess to what you&#39;re typing.</li>
 <li>Below the Best Guess, you&#39;ll see the top 10 guesses for your next word, presented in a cumulative distribution.</li>
 </ul>
 
@@ -842,11 +842,11 @@ hljs.initHighlightingOnLoad();
 <h3>The Model</h3>
 <div class="slideContent" >
 <ul>
-<li>The code for the model build is available here</li>
-<li>It is an absolute back-off, trigram language model</li>
-<li>It is a &ldquo;trigram language model&rdquo; because it assigns probability to 3-word sequences given a training corpus</li>
-<li>It is a &ldquo;back-off&rdquo; model because it falls back (or backs off) to lower order (bigram, unigram) models after looking for trigram matches</li>
-<li>It is an &ldquo;absolute discount&rdquo; model because it redistributes a set probability weight from higher- to lower-order n-gram guesses. </li>
+<li>The code for the model build is available <a href="https://github.com/daddyprasad5/capstone_final">here</a>.</li>
+<li>It is an absolute discount, back-off, trigram language model.</li>
+<li>It is a &ldquo;trigram language model&rdquo; because it assigns probability to 3-word sequences given a training corpus.</li>
+<li>It is a &ldquo;back-off&rdquo; model because it falls back (or backs off) to lower order (bigram, unigram) models after looking for trigram matches.</li>
+<li>It is an &ldquo;absolute discount&rdquo; model because it redistributes a set probability weight from higher- to lower-order n-gram guesses.</li>
 </ul>
 
 </div>
@@ -860,9 +860,9 @@ hljs.initHighlightingOnLoad();
 <p>Accuracy with&hellip;</p>
 
 <ul>
-<li>10 guesses: 38%</li>
-<li>3 guesses: 24%</li>
 <li>1 guess: 15%</li>
+<li>3 guesses: 24%</li>
+<li>10 guesses: 38%</li>
 </ul>
 
 <p>Best guess accuracy after typing&hellip;<br></p>
@@ -889,7 +889,7 @@ Time to inital guess*: 60.6 ms
 </div>
 
 <p><br>
-*<a href="https://xyz.com">performance report</a><br>
+*<a href="http://daddyprasad5.github.io/perfGetDistro.html">performance report</a><br>
 **network and ui factors will increase perceived latency</p>
 
 </div>
